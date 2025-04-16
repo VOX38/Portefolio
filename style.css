@@ -1,15 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+
 *{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+h1,h2,h3,h4{
+    font-family: "Permanent Marker";
 }
 
+/*Felxbox*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gap90{
+    gap: 90px;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+.alignCenter{
+    align-items: center;
+}
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
+.w30{
+    width: 30%;
+}
+.gauche{
+    width: 30%;
+}
+.gauche img{
+    width: 100%;
+}
+.droite{
+    width: 66%;
+}
+.xp{
+    padding: 22px 36px;
+    border-radius: 22px;
+    position: relative;
+    background-color: #ed7373;
+}
+.xp::before{
+    width: 32px;
+    height: 32px;
+    background-color: #ed7373;
+    border-radius: 0 0 32px 0;
+    position: absolute;
+    bottom: -4px;
+    left: -2px;
+    transform: rotate(20deg);
+    content: "";
+}
+.illu img{
+    width: 100%;
+}
 
-.flex{
-    display:
+.illu{
+    width: 30%;
+    position: relative;
+}
+
+.illu::before{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left:140px;
+    content:"";
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: #efbdf89a;
 }
